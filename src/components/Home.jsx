@@ -21,6 +21,7 @@ const Home = () => {
       .then((data) => {
         setImages(data.hits);
         setIsLoading(false);
+        console.log(term)
       })
       .catch((err) => console.log(err));
   }, [term]);

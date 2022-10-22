@@ -1,11 +1,11 @@
 import React, {useState} from 'react'
 
-const ImageSrch = ( searchText ) => {
+const ImageSrch = ({ searchText }) => {
    const [text, setText] = useState('');
 
    const onSubmit = (e) => {
     e.preventDefault();
-
+    console.log(text)
     searchText(text)
    }
 
